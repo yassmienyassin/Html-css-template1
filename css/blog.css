@@ -1,0 +1,312 @@
+*{
+    text-transform: capitalize;
+}
+
+ul{
+    list-style: none;
+}
+.section-header{
+    text-align: left;
+}
+.section-header .line{
+    margin: 0 auto 20px 0;
+}
+p{
+    color:#999
+}
+/* header */ 
+  .header{
+    background:#fff;
+}
+.header .header-content .nav > li > a{
+    color:#000
+}
+
+.blog-testmonial{
+    display: grid;
+    grid-template-columns: 10% 89%;
+}
+.blog-testmonial .detail{
+    margin: 0 20px;
+}
+.blog-testmonial .detail .detail-item{
+    display:flex;
+    justify-content:space-between;
+}
+
+/* Breackrumb Style */
+.breakrumb{
+
+}
+.breakrumb .breackrumb-content{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.breackrumb-content .blog-heading{
+    font-size: 35px;
+}
+.breackrumb-content .breakrumb-list a{
+    position: relative;
+    color: #6195ff;
+    padding-right:10px;
+    font-size: 17px;
+}
+.breackrumb-content .breakrumb-list a::after{
+    content:"/";
+    color:#999;
+    margin-left: 6px;
+
+}
+.breackrumb-content .breakrumb-list span{
+    color:#999;
+}
+
+/* Blog body Style */
+    section .section-content{
+        display:grid;
+        grid-gap: 30px;
+        grid-template-areas: "main main main aside";
+       
+    }
+    main{
+        grid-area: main;
+    }
+    aside{
+        grid-area: aside;
+    }
+
+    section img{
+        width:100%
+    }
+
+    aside .section-header{
+        margin-top: 50px;
+    }
+
+    /* main style */
+   .blog-list{
+         list-style: none;
+       padding:10px 0;
+    }
+  .blog-list li{
+        display: inline-block;
+        margin-right: 7px;
+    }
+    .blog-list li i{
+        color:#6195ff;
+        margin-right: 2px;
+    }
+    .blog-item-title{
+        font-family: inherit;
+        margin-top: 5px;
+    }
+     .blog-item-desc{
+        color:#888;
+        padding: 20px 0;
+        line-height: 1.6;
+    }
+    /* testmonial */
+    main > .blog-testmonial{
+        grid-template-columns: 20% 79%;
+      
+    }
+    main > .blog-testmonial .detail .detail-item{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+    main > .blog-testmonial  h4{
+        font-size: 25px;
+    }
+    .blog-testmonial ul.detail-links li{
+        display: inline-block;
+    }
+    .blog-testmonial ul.detail-links li a{
+        display: block;
+        color: #fff;
+        background: #6195ff;
+        padding: 3px 8px;
+        margin: 0 0 0 3px;
+        border-radius: 13%
+    }
+
+    /* comments  */
+    .coments .section-title{
+        margin-top: 25px;
+    }
+    .coments .blog-testmonial {
+        display: grid;
+        grid-template-columns: 10% 89%;
+        margin-bottom: 0px;
+        padding: 20px;
+        border: 1px solid #dfdfff;
+        transition: transform .5s ease-in-out
+    }
+    .coments .blog-testmonial:hover{
+        border: 1px solid #6195ff;
+        transform:scale(1.04)
+    }
+    .coments .blog-testmonial:hover .detail-item h4{
+        color:#6195ff;
+    }
+    .comment-item .detail-item{
+        margin-bottom: 8px;
+    }
+    .comment-item .detail-item h4{
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+        transition:color.2s ease-in-out
+    }
+    .comment-item .detail-item .time{
+        color:#888;
+        font-weight: 600;
+        font-size: 13px;
+        margin-left: 5px;
+        text-transform: uppercase;
+    }
+    .comment-item .detail-item a{
+        color:#6195ff
+    }
+
+    /* blog-tags */
+    .blog-tags{
+        margin: 10px 0 40px;
+    }
+    .blog-tags ul li{
+        display: inline-block;
+    }
+    .blog-tags ul li a{
+        background:#cccccc94;
+        display: block;
+        color:#000;
+        padding: 6px 10px;
+        font-size:16px;
+        font-weight: normal;
+        margin-bottom: 6px;
+    }
+    .blog-tags ul li a i{
+        color:#6195ff;
+    }
+    .blog-tags ul span{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    /* contact form */
+    .contact form.blog{
+            width: 100%;
+            margin: auto;   
+    }
+    .contact form input[type=submit]{
+        margin: 20px 0;
+        border-radius: 0;
+        width:20%
+    }
+
+    /* search icon */
+    .search form{
+        border: 1px solid #ccc;
+        height: 39px;
+        border-radius: 17px;
+        background: #e8e8e8;
+    }
+    .search form input{
+        border: none;
+        height: 100%;
+        width: 87%;
+        border-radius: 17px;
+        background: #e8e8e8;
+        padding: 10px 20px;
+    }
+    .search form input:focus{
+        border:none;
+        outline:none
+    }
+    .search form a{
+        color:#6195ff
+    }
+
+    /* category */
+    .catagory-list li{
+        margin-bottom: 15px;
+    }
+    .catagory-list li a{
+        display: block;
+       color:gray;
+        position: relative;
+        transition:color .2s ease-in-out
+    }
+    .catagory-list li a span{
+        position: absolute;
+        color: #6195ff;
+        right: 10px;
+    }
+    .catagory-list li:hover a{
+        color: #6195ff;
+    }
+
+
+    /* posts */
+    .blog-testmonial.post-item {
+        grid-template-columns: 32% 72%;
+        margin-bottom: 30px;
+    }
+    .post-item .post-time{
+        display: block;
+        color: #6195ff;
+        margin-top: 6px;
+        font-size: 13px;
+    }
+
+    /* media query */
+    @media(max-width:767px){
+    .header .header-content .nav > li > a{
+       color:#fff
+    }
+    .breakrumb .breackrumb-content {
+        margin-top: 40px;
+    }
+    section{
+        position: relative;
+    }
+    section .list-icon{
+        position:absolute;
+        right: 70px;
+        top: 20px;
+    }
+    
+
+    .breackrumb-content .blog-heading {
+        font-size: 25px;
+    }
+    aside{
+        transform:scale(0);
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        background:#fff;
+        width:50%;
+        padding:20px;
+        right:10px;
+        top:10px;
+        box-shadow: 1px 1px 11px 2px #ccc;
+        border:1px solid #ccc;
+        transform-origin:top right;
+        transition:all .5s ease-in-out;
+    }
+    .list-icon:hover + aside{
+        transform:scale(1);
+        opacity: 1;
+        background:rgba(255,255,255,.7);
+        visibility: visible;
+        right:10px;
+        z-index:99;
+    }
+ 
+   
+    section .section-content {
+        display: block;
+    }
+}
